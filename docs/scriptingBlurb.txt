@@ -1,0 +1,25 @@
+Tools Programming
+FBX Importer for PrimeEngine. The program is made in C++. It is made to take in a binary .FBX file, and gives the engine the data formatted in order to be used. It also exports out the textures in order to allow users to edit texture images for their personal use. Here is the package along with the executable: FBX Importer
+Tray Icon customized to launch development tools and environments for Scrapyard. Made in C# and sits in the windows tray. The context menu gives the users a GUI in order to custom launch UDK, Maya, analytics grapher, our custom tools, and various other common actions amongst our devs.
+Python Libraries
+Perforce library to wrap the P4Python API. Added functionality to the API in order to make the interface more intuitive to a programmer (the original P4Python is specific on its function calls).
+Custom Perforce Workspace updater to allow devs to have an easy way to update their custom set of directories that need to be up-to-date as easily as possible. Very helpful for programmers especially who don’t want to keep updating assets while updating root, and artists use it in order to make sure they do not get a bad version of the editor (as we are using UDK, if an engineer sends bad code in a changelist the editor won’t launch) allowing artists to work worry-free of an engineer hastily committing code.
+Email error handler to e-mail all tools/related engineers. This is implemented using a python decorator, and that module is imported into other modules and used in namespaces that depend on whether or not the other module is a success or not.
+Stub Directory Generator to make sure common directory structures are being used by artists to organize assets.
+Auto-Adding new Assets to Perforce in order to help artists have an easier time acclimating to using perforce. This tool searches the asset directories created from the generator, and imports the perforce library to see if any files in these directories exist on perforce. If they do not exist, they are added to a formatted change list, so that artists can check to make sure they are marking for add the files they need before submitting.
+Maya Scripting Experience
+Maya scripts are all done in Python
+
+Hitbox/Attackbox json Exporter to give per frame animation data for our 2D fighting game, Scrapyard. This scripts launches a GUI in which the user is able to generate hit/attack boxes for each frame of an animation file. This data is then exported to a json, which UDK will read in every time the game launches. Collisions are based off of this box data instead of mesh collisions to allow combat balancing be separated from animation. Here is full documentation. Here is a video tutorial of the tools usage.
+Maya Launcher. This adds customs shelves, menus, and script paths, so Maya will have tools and functionality specific to my team projects.
+Exporter menu drop-down commands in order to export Static Meshes, Skeletal Meshes, and Animations to UDK in project relative directories.
+Command Port commands for playblasting of scenes. Script will recursively find all Maya scenes and create playblasts of all assets. Currently being used to give off-site sound designers a feel for the game animations.
+Renaming all members in a hierarchy (useful for appending and altering joint hierarchies).
+Object centering for putting objects into games with a proper pivot.
+Turntable rendering script. (Would render a frame every 5 degrees while pivoting the camera based on the up axis)
+General Scripting Experience
+Python
+
+E-mail Spoofer: Allows users to fake e-mail headers and smtp servers in order to make e-mails seem they are sent from anyone.
+Custom .mp3 Creator: It grabs sound clips found on a server, asks the user for which ones they want in their final clip, and appends all of the clips together and saves the file to the users computer.
+Port Scanner: runs on a network to see which ports are available for use.
