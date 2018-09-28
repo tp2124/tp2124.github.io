@@ -1,0 +1,2 @@
+Navbar code is copy and pasted everywhere.	See if there is a better way to note have this duplicated html everywhere. This also includes fixing the same issue for header includes, and other styling includes consistent amongst multiple pages.
+Dropdown bar is broken on non-Home pages.		
