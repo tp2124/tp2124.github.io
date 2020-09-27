@@ -38,4 +38,11 @@ code {
 
 
 /* Extra CSS Custom for portfolio page */
+.section-space { 
+  margin: 25px 0;
+}
 
+.stance-card {
+  display: none; 
+  margin: 0px 200px;
+}
