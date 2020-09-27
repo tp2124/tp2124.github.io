@@ -62,13 +62,16 @@
         </div>
         <div class="col-lg-3 ">
           <a href="/assets/docs/DISC_Profile.pdf" target="_blank">
-            <img src="/assets/images/discProfile.png" class="img-fluid" alt="DISC Profile" width="300" />
+            <img src="/assets/images/discProfile.png" class="img-thumbnail" alt="DISC Profile" width="300" />
           </a>
         </div>
         <div class="col-lg-3">
           <div class="d-flex flex-column"></div>
-          <a href="https://github.com/tp2124" class="btn btn-primary w-50 mt-1" target="_blank">GitHub</a>
-          <a href="/assets/docs/resume.pdf" class="btn btn-primary w-50 mt-1" target="_blank">Resume</a>
+          <a href="https://github.com/tp2124" class="btn btn-primary bg-dark w-50 mt-1" target="_blank">
+            <img src="/assets//images//icons/GitHub-Mark-Light-32px.png" class="img-fluid"/>
+            GitHub
+          </a>
+          <a href="/assets/docs/resume.pdf" class="btn btn-primary bg-dark w-50 mt-1" style="height: 44px;" target="_blank">Resume</a>
         </div>
       </div>
       <!-- <div class="row">
@@ -201,7 +204,7 @@
             var stanceButtonDiv = document.getElementById(divName);
             var skipEnablingStanceView = stanceButtonDiv.style.display === "block"
 
-            let stanceIds = ["stanceDiversity", "stanceTeam", "stanceOutreach", "stanceDedication"]
+            let stanceIds = ["stanceDiversity", "stanceTeam", "stanceOutreach", "stanceDedication", "stanceSpaceHolder"]
             stanceIds.forEach(knownStanceId => {
               var stanceDiv = document.getElementById(knownStanceId);
               stanceDiv.style.display = "none";
@@ -209,6 +212,10 @@
 
             if (skipEnablingStanceView === false) {
               stanceButtonDiv.style.display = "block";
+            }
+            else { 
+              var spaceholderDiv = document.getElementById("stanceSpaceHolder");
+              spaceholderDiv.style.display = "block";
             }
           }
         </script>
@@ -290,12 +297,30 @@
             </div>
           </div>
         </div>
+        <div id="stanceSpaceHolder" style="height: 250px;" ></div>
       </div>
     </div>
 
     <div style="margin: 25px 0;">
       <h2>Previous Projects</h2>
       <div id="accordion" role="tablist">
+        <div class="card">
+          <div class="card-header" role="tab" id="heading7">
+            <h5 class="mb-0">
+              <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false"
+                aria-controls="collapse7">
+                Scrapyard
+              </a>
+            </h5>
+          </div>
+          <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+            <div class="card-body">
+              <h4>Trailer</h4>
+              <iframe src="https://player.vimeo.com/video/62643984" width="640" height="360" frameborder="0"
+                allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
         <div class="card">
           <div class="card-header" role="tab" id="headingOne">
             <h5 class="mb-0">
@@ -313,7 +338,6 @@
             </div>
           </div>
         </div>
-
         <div class="card">
           <div class="card-header" role="tab" id="headingTwo">
             <h5 class="mb-0">
@@ -332,7 +356,6 @@
             </div>
           </div>
         </div>
-
         <div class="card">
           <div class="card-header" role="tab" id="heading3">
             <h5 class="mb-0">
@@ -351,8 +374,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="card">
           <div class="card-header" role="tab" id="heading4">
             <h5 class="mb-0">
@@ -371,8 +392,6 @@
             </div>
           </div>
         </div>
-
-
         <div class="card">
           <div class="card-header" role="tab" id="heading5">
             <h5 class="mb-0">
@@ -391,7 +410,6 @@
             </div>
           </div>
         </div>
-
         <div class="card">
           <div class="card-header" role="tab" id="heading6">
             <h5 class="mb-0">
@@ -405,26 +423,8 @@
             <div class="card-body">
               <h4>Trailer</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/J_1_Nvn7DPM" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-header" role="tab" id="heading7">
-            <h5 class="mb-0">
-              <a class="collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false"
-                aria-controls="collapse7">
-                Scrapyard
-              </a>
-            </h5>
-          </div>
-          <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
-            <div class="card-body">
-              <h4>Trailer</h4>
-              <iframe src="https://player.vimeo.com/video/62643984" width="640" height="360" frameborder="0"
-                allow="autoplay; fullscreen" allowfullscreen></iframe>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
             </div>
           </div>
         </div>
