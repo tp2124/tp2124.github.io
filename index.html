@@ -67,10 +67,10 @@
         </div>
         <div class="col-lg-3">
           <div class="d-flex flex-column"></div>
-            <a href="https://github.com/tp2124" class="btn btn-primary w-50 mt-1" target="_blank">GitHub</a>
-            <a href="/assets/docs/resume.pdf" class="btn btn-primary w-50 mt-1" target="_blank">Resume</a>
-          </div>
+          <a href="https://github.com/tp2124" class="btn btn-primary w-50 mt-1" target="_blank">GitHub</a>
+          <a href="/assets/docs/resume.pdf" class="btn btn-primary w-50 mt-1" target="_blank">Resume</a>
         </div>
+      </div>
       <!-- <div class="row">
         <div class="col-lg-1"></div>
         <a href="https://github.com/tp2124" class="btn btn-primary col-lg-1" target="_blank">GitHub</a>
@@ -188,30 +188,38 @@
       </a>
       These are personal causes that I contribute my freetime and energy towards.
 
-      <div class="container-fluid">
+      <div class="dflex justify-content-center">
         <div class="row">
-          <button class="btn btn-primary col-lg-3 m-1" value="stanceDiversity"
+          <button class="btn btn-primary" value="stanceDiversity"
             onclick="displayStance(this.value)">Diversity</button>
-          <button class="btn btn-primary col-lg-3 m-1" value="stanceTeam" onclick="displayStance(this.value)">Trust and
-            Teams</button>
+          <button class="btn btn-primary" value="stanceTeam" 
+            onclick="displayStance(this.value)">Trust and Teams</button>
+          <button class="btn btn-primary" value="stanceOutreach"
+            onclick="displayStance(this.value)">Outreach</button>
+          <button class="btn btn-primary" value="stanceDedication"
+            onclick="displayStance(this.value)">Dedication</button>
         </div>
 
         <script>
           function displayStance(divName) {
-            let stanceIds = ["stanceDiversity", "stanceTeam"]
+            var stanceButtonDiv = document.getElementById(divName);
+            var skipEnablingStanceView = stanceButtonDiv.style.display === "block"
+
+            let stanceIds = ["stanceDiversity", "stanceTeam", "stanceOutreach", "stanceDedication"]
             stanceIds.forEach(knownStanceId => {
               var stanceDiv = document.getElementById(knownStanceId);
               stanceDiv.style.display = "none";
             });
 
-            var stanceButtonDiv = document.getElementById(divName);
-            stanceButtonDiv.style.display = "block";
+            if (skipEnablingStanceView === false) {
+              stanceButtonDiv.style.display = "block";
+            }
           }
         </script>
       </div>
 
-      <div class="d-flex justify-content-center">
-        <div id="stanceDiversity" class="card p-2" style="display: none;">
+      <div class="d-flex">
+        <div id="stanceDiversity" class="card p-2" style="display: none; margin: 0px 200px;">
           <div class="card-body">
             <h4 class="card-title">Diversity</h4>
             <div class="card-text">
@@ -219,7 +227,8 @@
                 <li>
                   LGBTQ
                   <ul>
-                    <li>North American Gay Volleyball Association athlete</li>
+                    <li><a href="https://nagva.org/" target="_blank">North American Gay Volleyball Association
+                        athlete</a></li>
                     <li>First-hand experience helping a coworker come out at work about being
                       transgender</li>
                   </ul>
@@ -227,41 +236,63 @@
                 <li>
                   Asian Americans
                   <ul>
-                    <li><a href="https://youtu.be/PMHf2RlZh34" target="_blank">9 Man volleyball
-                        athlete</a></li>
-                    <li>First-hand experience coworker to come out at work about being transgender.</li>
+                    <li><a href="https://youtu.be/PMHf2RlZh34" target="_blank">9 Man volleyball athlete</a></li>
+                    <li>Asian Pacific American youth group leader and on leadrship board at work culture groups</li>
+                    <li>Around 1.5 years spent in China & Japan in both working and personal environments</li>
                   </ul>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div id="stanceTeam" class="card p-2" style="display: none;">
+        <div id="stanceTeam" class="card p-2" style="display: none; margin: 0px 200px;">
           <div class="card-body">
             <h4 class="card-title">Trust and Team Building</h4>
             <div class="card-text">
               <ul>
-                <li>
-                  LGBTQ
-                  <ul>
-                    <li>North American Gay Volleyball Association athlete</li>
-                    <li>First-hand experience helping a coworker come out at work about being
-                      transgender</li>
-                  </ul>
-                </li>
-                <li>
-                  Asian Americans
-                  <ul>
-                    <li><a href="https://youtu.be/PMHf2RlZh34" target="_blank">9 Man volleyball
-                        athlete</a></li>
-                    <li>First-hand experience coworker to come out at work about being transgender.</li>
-                  </ul>
-                </li>
+                <li>Avid "Secret Santa" organizer</li>
+                <li>Tries to never eat lunch alone</li>
+                <li>High recruitment standards. I aim to conduct the interview process with the focus of creating a
+                  supportive environment and how the candidates responds to being questioned outside their knowledge
+                  base.</li>
+                <li>Chosen by team to be interim Lead Tools Programmer in North America for over 1 year at Rockstar
+                  Games when not the most senior developer</li>
               </ul>
             </div>
           </div>
-          <!-- <div class="p-2">Flex item 2</div> -->
-          <!-- <div class="p-2">Flex item 3</div> -->
+        </div>
+        <div id="stanceOutreach" class="card p-2" style="display: none; margin: 0px 200px;">
+          <div class="card-body">
+            <h4 class="card-title">Outreach</h4>
+            <div class="card-text">
+              <ul>
+                <li>Co-Founder of <a href="https://realtalksgroup.wordpress.com/" target="_blank">Real Talks</a>: a
+                  non-profit organization that did outreach to young professionals to give real-world work experience
+                  and an environment to ask questions to fellow young professionals.</li>
+                <li>Founder of <span class="font-weight-bold">Money Talks</span>: a community based on making personal
+                  finance approachable topics to young professionals. The goal of getting members more engaged by
+                  becoming comfortable with talking about various finance topics.</li>
+                <li>Began University Relations recruitment at Rockstar San Diego. This program grew within 1 year to
+                  include getting support from recruiters as well as traveling to more events.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="stanceDedication" class="card p-2" style="display: none; margin: 0px 200px;">
+          <div class="card-body">
+            <h4 class="card-title">Dedication and Adversity</h4>
+            <div class="card-text">
+              <div class="card-text">
+                <ul>
+                  <li>NCAA D1 varsity 400m hurdler</li>
+                  <li>Split my right kneecap in half in December 2014. Split again during rehabilitation February 2015.
+                  </li>
+                  <li>Recovered to the point of competing in casual strength lifting competitions and competing in
+                    nationally ranked volleyball tournaments.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -402,6 +433,8 @@
       </div>
       <br />
     </div>
+  </div>
+
 
     <!-- Optional JavaScript -->
     <!-- JQuery.js, Popper.js, then Bootstrap JS -->
