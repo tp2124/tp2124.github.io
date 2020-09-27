@@ -68,10 +68,11 @@
         <div class="col-lg-3">
           <div class="d-flex flex-column"></div>
           <a href="https://github.com/tp2124" class="btn btn-primary bg-dark w-50 mt-1" target="_blank">
-            <img src="/assets//images//icons/GitHub-Mark-Light-32px.png" class="img-fluid"/>
+            <img src="/assets//images//icons/GitHub-Mark-Light-32px.png" class="img-fluid" />
             GitHub
           </a>
-          <a href="/assets/docs/resume.pdf" class="btn btn-primary bg-dark w-50 mt-1" style="height: 44px;" target="_blank">Resume</a>
+          <a href="/assets/docs/resume.pdf" class="btn btn-primary bg-dark w-50 mt-1" style="height: 44px;"
+            target="_blank">Resume</a>
         </div>
       </div>
       <!-- <div class="row">
@@ -187,11 +188,13 @@
     </div>
 
     <div class="section-space">
-      <h2>What Do I Stand For<a href="https://www.youtube.com/watch?v=C6GFb7FIB0Y&feature=youtu.be&t=144&ab_channel=Hamilton" target="_blank">...</a></h2>
+      <h2>What Do I Stand For<a
+          href="https://www.youtube.com/watch?v=C6GFb7FIB0Y&feature=youtu.be&t=144&ab_channel=Hamilton"
+          target="_blank">...</a></h2>
       These are personal causes that I contribute my freetime and energy towards.
 
       <div class="d-flex" style="margin: 0px 50px; height: 100px;">
-        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceTeam" 
+        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceTeam"
           onclick="displayStance(this.value)">Trust and Teams</button>
         <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceOutreach"
           onclick="displayStance(this.value)">Outreach</button>
@@ -214,7 +217,7 @@
             if (skipEnablingStanceView === false) {
               stanceButtonDiv.style.display = "block";
             }
-            else { 
+            else {
               var spaceholderDiv = document.getElementById("stanceSpaceHolder");
               spaceholderDiv.style.display = "block";
             }
@@ -265,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div id="stanceOutreach" class="card p-2 stance-card>
+        <div id="stanceOutreach" class="card p-2 stance-card">
           <div class="card-body">
             <h4 class="card-title">Outreach</h4>
             <div class="card-text">
@@ -298,7 +301,7 @@
             </div>
           </div>
         </div>
-        <div id="stanceSpaceHolder" style="height: 250px;" ></div>
+        <div id="stanceSpaceHolder" style="height: 250px;"></div>
       </div>
     </div>
 
@@ -332,6 +335,16 @@
           </div>
           <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="card-body">
+              <span class="text-muted">February 2019 - March 2019</span>
+              <h4>Part of My Contributions</h4>
+              <ul>
+                <li>Exposed the game data to our internal game data API that hosts data for internal partners including
+                  our web team, customer service team, and quality assurance team. This was setup to create data sets
+                  that are staged to allow consumers to adjust to new changes. This setup was updating automatically
+                  every night with a Jenkins setup, so the system had 0 programmer support.</li>
+                <li>Added telemetry tracking to tool suite to allow visibility on which tools are being used. This used
+                  a tech stack that included Grafana for the visualizations.</li>
+              </ul>
               <h4>Trailer</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/vPguoeYTvMI" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -424,8 +437,8 @@
             <div class="card-body">
               <h4>Trailer</h4>
               <iframe width="560" height="315" src="https://www.youtube.com/embed/J_1_Nvn7DPM" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -435,17 +448,17 @@
   </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- JQuery.js, Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- JQuery.js, Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
 
 <footer class="footer">
