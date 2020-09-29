@@ -62,7 +62,7 @@
           </a>
         </div>
         <div class="col-lg-3">
-          <div class="d-flex flex-column"></div>
+          <div class="d-flex justify-content-lg-center"></div>
           <a href="https://github.com/tp2124" class="btn btn-primary bg-dark w-50 mt-1" target="_blank">
             <img src="/assets//images//icons/GitHub-Mark-Light-32px.png" class="img-fluid" />
             GitHub
@@ -85,7 +85,7 @@
     </div>
     <div class="section-space">
       <h2>Testimonials</h2>
-      <div class="d-flex justify-content-center" style="height: 250px;">
+      <div class="d-flex justify-content-center" style="height: 300px; overflow-y:scroll;">
         <div id="carouselExampleIndicators" class="carousel slide w-75" data-ride="carousel">
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
@@ -174,40 +174,33 @@
           target="_blank">...</a></h2>
       These are personal causes that I contribute my freetime and energy towards.
 
-      <div class="d-flex" style="margin: 0px 50px; height: 100px;">
-        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceTeam"
+      <div class="d-flex flex-wrap" style="margin: 0px 50px;">
+        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceTeam"
           onclick="displayStance(this.value)">Trust and Teams</button>
-        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceOutreach"
+        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceOutreach"
           onclick="displayStance(this.value)">Outreach</button>
-        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceDiversity"
+        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceDiversity"
           onclick="displayStance(this.value)">Diversity</button>
-        <button class="btn btn-primary bg-dark flex-fill p-2 m-2" value="stanceDedication"
+        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceDedication"
           onclick="displayStance(this.value)">Dedication</button>
 
         <script>
           function displayStance(divName) {
-            var stanceButtonDiv = document.getElementById(divName);
-            var skipEnablingStanceView = stanceButtonDiv.style.display === "block"
 
-            let stanceIds = ["stanceDiversity", "stanceTeam", "stanceOutreach", "stanceDedication", "stanceSpaceHolder"]
+            let stanceIds = ["stanceDiversity", "stanceTeam", "stanceOutreach", "stanceDedication"]
             stanceIds.forEach(knownStanceId => {
               var stanceDiv = document.getElementById(knownStanceId);
               stanceDiv.style.display = "none";
             });
 
-            if (skipEnablingStanceView === false) {
+            var stanceButtonDiv = document.getElementById(divName);
               stanceButtonDiv.style.display = "block";
             }
-            else {
-              var spaceholderDiv = document.getElementById("stanceSpaceHolder");
-              spaceholderDiv.style.display = "block";
-            }
-          }
         </script>
       </div>
 
       <div class="d-flex">
-        <div id="stanceDiversity" class="card p-2 stance-card">
+        <div id="stanceDiversity" class="card stance-card w-100">
           <div class="card-body">
             <h4 class="card-title">Diversity</h4>
             <div class="card-text">
@@ -233,7 +226,7 @@
             </div>
           </div>
         </div>
-        <div id="stanceTeam" class="card p-2 stance-card">
+        <div id="stanceTeam" class="card w-100">
           <div class="card-body">
             <h4 class="card-title">Trust and Team Building</h4>
             <div class="card-text">
@@ -251,7 +244,7 @@
             </div>
           </div>
         </div>
-        <div id="stanceOutreach" class="card p-2 stance-card">
+        <div id="stanceOutreach" class="card stance-card w-100">
           <div class="card-body">
             <h4 class="card-title">Outreach</h4>
             <div class="card-text">
@@ -268,11 +261,10 @@
             </div>
           </div>
         </div>
-        <div id="stanceDedication" class="card p-2 stance-card">
+        <div id="stanceDedication" class="card stance-card w-100">
           <div class="card-body">
             <h4 class="card-title">Dedication and Adversity</h4>
             <div class="card-text">
-              <div class="card-text">
                 <ul>
                   <li>NCAA D1 varsity 400m hurdler</li>
                   <li>Split my right kneecap in half in December 2014. Split again during rehabilitation February 2015.
@@ -284,8 +276,6 @@
             </div>
           </div>
         </div>
-        <div id="stanceSpaceHolder" style="height: 250px;"></div>
-      </div>
     </div>
 
     <div class="section-space">
