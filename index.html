@@ -97,13 +97,13 @@
           onclick="displayStance(this.value)">Outreach</button>
         <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceGlobal"
           onclick="displayStance(this.value)">Global</button>
-        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceDedication"
+        <button class="btn btn-primary bg-dark flex-fill m-2" value="stanceGrit"
           onclick="displayStance(this.value)">Dedication</button>
 
         <script>
           function displayStance(divName) {
 
-            let stanceIds = ["stanceGlobal", "stanceTeam", "stanceOutreach", "stanceDedication"]
+            let stanceIds = ["stanceGlobal", "stanceTeam", "stanceOutreach", "stanceGrit"]
             stanceIds.forEach(knownStanceId => {
               var stanceDiv = document.getElementById(knownStanceId);
               stanceDiv.style.display = "none";
@@ -168,9 +168,9 @@
             </div>
           </div>
         </div>
-        <div id="stanceDedication" class="card stance-card w-100">
+        <div id="stanceGrit" class="card stance-card w-100">
           <div class="card-body">
-            <h4 class="card-title">Dedication and Adversity</h4>
+            <h4 class="card-title">Grit</h4>
             <div class="card-text">
                 <ul>
                   <li>NCAA D1 varsity 400m hurdler</li>
